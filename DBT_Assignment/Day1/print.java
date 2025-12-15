@@ -1,4 +1,4 @@
-package hello_world;
+//package hello_world;
 
 public class print {
 	public static void main (String[]args)

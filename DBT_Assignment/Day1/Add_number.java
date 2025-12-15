@@ -1,4 +1,4 @@
-package hello_world;
+//package hello_world;
 import java.util.Scanner;
 
 public class Add_number {
@@ -16,7 +16,6 @@ public class Add_number {
 
         // Performing addition
         int c = a + b;
-
         // Displaying result
         System.out.println("Addition of two numbers is: " + c);
     }
