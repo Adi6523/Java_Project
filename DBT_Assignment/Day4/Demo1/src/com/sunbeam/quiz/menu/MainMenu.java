@@ -1,8 +1,54 @@
 package com.sunbeam.quiz.menu;
 
-import java.util.*;
+import java.util.Scanner;
+
+enum EMainMenu{
+	EXIT,SIGNIN,SIGNUP,ADMIN
+}
+
 
 public class MainMenu {
+	
+	public static void enumMainMenu(Scanner sc)
+	{
+		EMainMenu[] arr = EMainMenu.values();
+		EMainMenu enumChoice;
+		do{
+			for (EMainMenu ele: arr)
+			{
+				System.out.println(ele.ordinal()+" . "+ele.name());
+			}
+			System.out.println("Enter Your Choice - ");
+			int choice = sc.nextInt();
+			enumChoice = arr[choice];
+			switch (enumChoice) {
+			case EXIT:
+				System.out.println("Thank You For Using Application");
+				break;
+			case SIGNIN:
+				System.out.println("You have selected the Signin Option");
+				SignInMenu.signInMenu(sc);
+				break;
+			case SIGNUP:
+				System.out.println("You have selected the Signup Option");
+				SignUpMenu.signUpMenu(sc);
+				break;
+			case ADMIN:
+				System.out.println("You have selected the Admin Option");
+				AdminMenu.adminMenu(sc);
+				break;
+
+			default:
+				System.out.println("Wrong Choice...");
+				break;
+			}
+		}while(enumChoice!=EMainMenu.EXIT);
+	}
+	
+	
+	
+	
+	
 	private static int mainMenuOptions(Scanner sc) {
 		System.out.println("***********MainMenu***********");
 		System.out.println("0.EXIT");
