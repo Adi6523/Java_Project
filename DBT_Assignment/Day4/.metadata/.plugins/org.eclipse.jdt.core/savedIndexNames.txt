@@ -1,5 +1,0 @@
-INDEX VERSION 1.134+E:\SUNBEAM\DayWise\Day4\.metadata\.plugins\org.eclipse.jdt.core
-1288848795.index
-3093133808.index
-1865797976.index
-3809673921.index

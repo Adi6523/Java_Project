@@ -1,7 +1,0 @@
-package com.sunbeam.quiz.menu;
-import java.util.*;
-public class MainMenu {
-	private static int mainMenuOptions(Scanner sc) {
-		
-	}
-}
